@@ -1,0 +1,82 @@
+\documentclass[12pt, oneside, openany]{book}
+
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+
+
+\usepackage{subfig,multicol}
+\usepackage[export]{adjustbox}
+
+
+
+\usepackage[margin=1in]{geometry}% Change the margins here if you wish.
+\setlength{\parindent}{0pt} % This is the set the indent length for new paragraphs, change if you want.
+\setlength{\parskip}{5pt} % This sets the distance between paragraphs, which will be used anytime you have a blank line in your LaTeX code.
+
+% Load the basics
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{titling}
+\usepackage{csquotes}% Recommended
+\usepackage{graphicx}
+
+% Page numbers
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\lhead{}
+%\cfoot{\thepage\ of \pageref{LastPage}}
+
+\usepackage[style=authoryear, backend=biber]{biblatex}
+\addbibresource{bibliography.bib} %
+
+
+\usepackage{amssymb}
+\renewcommand{\labelitemi}{$\blacksquare$}
+
+
+\title{
+The role of spatial planning 
+\\ in facilitating the implementation of 
+\\ Circular Economy practices
+\\  in City-Regionss
+\\
+  \large Applications to Industrial Symbiosis \& 
+  \\
+  Solid Waste Management
+\\  
+  \small 25\% Seminar}
+
+
+
+% Meta of the document
+
+\author{Phd student: Jonathan E. Cohen
+\\ Main supervisor: Lars Marcus
+\\ Assistant supervisor: Jorge Gil
+\\ Examiner: Meta Berghauser Pont}
+\date{June 2020}
+
+\setlength{\droptitle}{-5em}   % This is your set screw
+
+\begin{document}
+\maketitle\vspace{-5ex}
+\tableofcontents
+
+\input{sections/secs/01_Introduction}
+\input{sections/secs/02_Theoretical}
+\input{sections/secs/03_Problems}
+\input{sections/secs/04_ResearchAim}
+\input{sections/secs/05_Questions}
+\input{sections/secs/06_Scope}
+\input{sections/secs/07_Methods}
+\input{sections/secs/08_Plan}
+\input{sections/secs/09_Results}
+\input{sections/secs/10_Reflection}
+\input{sections/secs/11_Seminar}
+%\input{sections/11_notes.tex}
+%\input{sections/00_Glossary}
+\printbibliography
+
+\end{document}
